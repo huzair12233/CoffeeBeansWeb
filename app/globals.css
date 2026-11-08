@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bark: #6b4518;
+  --bark-deep: #4a2f10;
+  --cream: #f4eddf;
+  --cream-soft: #fbf7ee;
+  --teal: #0e8c86;
+  --amber: #e3a008;
+  --ink: #221b14;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--cream-soft);
+  color: var(--ink);
+  font-feature-settings: "ss01", "cv05";
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--teal);
+  color: #fff;
+}
+
+/* Thin, themed scrollbar */
+::-webkit-scrollbar {
+  width: 11px;
+}
+::-webkit-scrollbar-track {
+  background: var(--cream);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--bark);
+  border: 3px solid var(--cream);
+  border-radius: 999px;
+}
+
+@layer components {
+  .container-x {
+    @apply mx-auto w-full max-w-container px-6 md:px-10;
+  }
+
+  .eyebrow {
+    @apply font-mono text-[11px] uppercase tracking-eyebrow;
+  }
+
+  /* Headline with slightly tighter optical spacing */
+  .display {
+    @apply font-display font-light leading-[0.95] tracking-[-0.02em];
+  }
+
+  /* Pill button — primary */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-7 py-3.5
+           font-sans text-sm font-semibold transition-all duration-300 ease-out-expo;
+  }
+  .btn-amber {
+    @apply btn bg-amber-brand text-espresso hover:brightness-105 hover:-translate-y-0.5
+           shadow-[0_10px_30px_-10px_rgba(227,160,8,0.6)];
+  }
+  .btn-ghost {
+    @apply btn border border-current text-current hover:bg-current/10;
+  }
+  .btn-ink {
+    @apply btn bg-espresso text-cream-soft hover:bg-bark-deep hover:-translate-y-0.5;
+  }
+}
+
+/* Film-grain / paper texture overlay */
+.grain::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  pointer-events: none;
+  opacity: 0.045;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* Hover image zoom helper */
+.img-zoom img {
+  transition: transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.img-zoom:hover img {
+  transform: scale(1.06);
+}
+
+/* Underline-grow link */
+.ulink {
+  position: relative;
+}
+.ulink::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  height: 1.5px;
+  width: 100%;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.ulink:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
