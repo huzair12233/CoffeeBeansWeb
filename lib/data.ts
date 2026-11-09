@@ -253,3 +253,68 @@ export const STATS = [
   { value: "48h", label: "From roast to your doorstep" },
   { value: "1,800m", label: "Average growing altitude" },
 ];
+
+export interface WholesaleLot {
+  id: string;
+  name: string;
+  origin: string;
+  region: string;
+  process: string;
+  grade: string;
+  notes: string[];
+  pricePerTon: number; // "from" price, USD per metric ton
+  bag: string; // sack size
+  img: string;
+}
+
+// Bulk / green coffee sold by the sack for wholesale partners.
+export const WHOLESALE: WholesaleLot[] = [
+  {
+    id: "w-yirgacheffe",
+    name: "Yirgacheffe G1",
+    origin: "Ethiopia",
+    region: "Gedeo Zone",
+    process: "Washed",
+    grade: "Green · Grade 1",
+    notes: ["Lemon", "Floral", "Tea-like"],
+    pricePerTon: 800,
+    bag: "70 lb sacks",
+    img: "product-yirgacheffe.jpg",
+  },
+  {
+    id: "w-antigua",
+    name: "Antigua Pastores",
+    origin: "Guatemala",
+    region: "Antigua Valley",
+    process: "Washed",
+    grade: "Green · SHB",
+    notes: ["Cocoa", "Spice", "Balanced"],
+    pricePerTon: 880,
+    bag: "70 lb sacks",
+    img: "product-antigua.jpg",
+  },
+  {
+    id: "w-supremo",
+    name: "Supremo EP 18",
+    origin: "Colombia",
+    region: "Nariño",
+    process: "Washed",
+    grade: "Green · Supremo",
+    notes: ["Caramel", "Nutty", "Clean"],
+    pricePerTon: 820,
+    bag: "70 lb sacks",
+    img: "product-supremo.jpg",
+  },
+  {
+    id: "w-sidama",
+    name: "Sidama Natural",
+    origin: "Ethiopia",
+    region: "Sidama",
+    process: "Natural",
+    grade: "Green · Grade 3",
+    notes: ["Strawberry", "Wine", "Sweet"],
+    pricePerTon: 900,
+    bag: "70 lb sacks",
+    img: "product-sidama.jpg",
+  },
+];

@@ -1,14 +1,15 @@
 import type { Metadata } from "next";
 import { PageHero } from "@/components/PageHero";
 import { Collection } from "@/components/Collection";
+import { WholesaleBeans } from "@/components/WholesaleBeans";
 import { Spotlight } from "@/components/Spotlight";
 import { CTA } from "@/components/CTA";
 import { IMG } from "@/lib/images";
 
 export const metadata: Metadata = {
-  title: "Coffee · ALTA",
+  title: "Coffee · 24°N",
   description:
-    "Shop ALTA's rotating single-origin coffees — roasted and ready, or green for home roasters. Each lot traced to a farm and scored above 86 points.",
+    "Shop 24°N's rotating single-origin coffees — roasted and ready, or green for home roasters. Each lot traced to a farm and scored above 86 points.",
 };
 
 export default function CoffeePage() {
@@ -23,6 +24,7 @@ export default function CoffeePage() {
         image={IMG.grinder}
       />
       <Collection />
+      <WholesaleBeans />
       <Spotlight />
       <CTA
         heading="Not sure where to start?"

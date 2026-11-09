@@ -5,9 +5,9 @@ import { CTA } from "@/components/CTA";
 import { IMG } from "@/lib/images";
 
 export const metadata: Metadata = {
-  title: "The Craft · ALTA",
+  title: "The Craft · 24°N",
   description:
-    "How ALTA sources, cups, roasts and ships — profiles calibrated to each origin's altitude and density, logged for every batch and shipped within 48 hours.",
+    "How 24°N sources, cups, roasts and ships — profiles calibrated to each origin's altitude and density, logged for every batch and shipped within 48 hours.",
 };
 
 export default function CraftPage() {

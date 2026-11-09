@@ -6,9 +6,9 @@ import { CTA } from "@/components/CTA";
 import { IMG } from "@/lib/images";
 
 export const metadata: Metadata = {
-  title: "Origins · ALTA",
+  title: "Origins · 24°N",
   description:
-    "ALTA sources high-grown single origins direct from farms along the coffee belt — Ethiopia, Kenya, Colombia, Guatemala, Panama and Brazil.",
+    "24°N sources high-grown single origins direct from farms along the coffee belt — Ethiopia, Kenya, Colombia, Guatemala, Panama and Brazil.",
 };
 
 export default function OriginsPage() {

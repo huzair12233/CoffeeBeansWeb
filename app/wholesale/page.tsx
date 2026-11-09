@@ -6,9 +6,9 @@ import { CTA } from "@/components/CTA";
 import { IMG } from "@/lib/images";
 
 export const metadata: Metadata = {
-  title: "Wholesale · ALTA",
+  title: "Wholesale · 24°N",
   description:
-    "Partner with ALTA — direct-trade single origins, flexible cadence, barista training and private-label programs for cafés and offices across California.",
+    "Partner with 24°N — direct-trade single origins, flexible cadence, barista training and private-label programs for cafés and offices across California.",
 };
 
 const STEPS = [
@@ -35,7 +35,7 @@ export default function WholesalePage() {
       <PageHero
         crumb="Wholesale"
         eyebrow="Partnerships"
-        title="Pour ALTA at"
+        title="Pour 24°N at"
         accent="your counter."
         subtitle="Cafés, restaurants and offices across California serve our single origins for their consistency and traceability. Here's how a partnership works."
         image={IMG.sacks}

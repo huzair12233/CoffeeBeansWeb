@@ -24,9 +24,9 @@ const mono = Martian_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ALTA · California Single-Origin Coffee Roasters",
+  title: "24°N · California Single-Origin Coffee Roasters",
   description:
-    "ALTA roasts high-grown single-origin coffee in small batches on the Oakland waterfront — traceable beans sourced direct from farms along the coffee belt, shipped within 48 hours of the roast.",
+    "24°N roasts high-grown single-origin coffee in small batches on the Oakland waterfront — traceable beans sourced direct from farms along the coffee belt, shipped within 48 hours of the roast.",
   keywords: [
     "specialty coffee",
     "single origin",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     "direct trade",
   ],
   openGraph: {
-    title: "ALTA · California Single-Origin Coffee Roasters",
+    title: "24°N · California Single-Origin Coffee Roasters",
     description:
       "High-grown single-origin coffee, roasted in small batches on the Oakland waterfront.",
     type: "website",

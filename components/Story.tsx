@@ -38,15 +38,16 @@ export function Story() {
           <Reveal>
             <p className="eyebrow text-teal-deep">Our Story</p>
             <h2 className="display mt-4 text-[clamp(2.2rem,5vw,3.6rem)]">
-              A roastery built on the pursuit of altitude.
+              A roastery named for the coffee belt.
             </h2>
           </Reveal>
           <Reveal delay={0.08}>
             <div className="mt-6 space-y-4 font-sans text-[15px] leading-relaxed text-ink/65">
               <p>
-                ALTA began with a simple obsession: the higher coffee grows, the
-                slower the cherries mature — and the more intricate the cup
-                becomes. We named ourselves for it.
+                24°N began with a simple obsession: the 24th parallel traces the
+                upper edge of the coffee belt, where high altitude and tropical
+                latitude slow the cherries and build the most intricate cups.
+                We named ourselves for it.
               </p>
               <p>
                 From a small warehouse on the Oakland waterfront, we roast only

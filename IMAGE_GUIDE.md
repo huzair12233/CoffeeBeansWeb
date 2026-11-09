@@ -1,4 +1,4 @@
-# ALTA — Image Slot Guide
+# 24°N — Image Slot Guide
 
 Every photo on the site is a **local file in `public/images/`**. To change a slot,
 replace the file **keeping the exact same filename** — the code points at the

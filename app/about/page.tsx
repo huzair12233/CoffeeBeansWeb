@@ -5,9 +5,9 @@ import { CTA } from "@/components/CTA";
 import { IMG } from "@/lib/images";
 
 export const metadata: Metadata = {
-  title: "About · ALTA",
+  title: "About · 24°N",
   description:
-    "ALTA is a small-batch coffee roastery on the Oakland waterfront, built on the pursuit of altitude and direct relationships with the farmers who grow our coffee.",
+    "24°N is a small-batch coffee roastery on the Oakland waterfront, built on the pursuit of altitude and direct relationships with the farmers who grow our coffee.",
 };
 
 export default function AboutPage() {

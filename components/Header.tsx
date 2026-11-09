@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "motion/react";
 import { NAV } from "@/lib/data";
@@ -38,20 +39,15 @@ export function Header() {
       }`}
     >
       <div className="container-x flex items-center justify-between">
-        <Link
-          href="/"
-          className={`flex items-baseline gap-2 ${solid ? "text-ink" : "text-cream-soft"}`}
-        >
-          <span className="font-display text-2xl font-semibold tracking-tight">
-            ALTA
-          </span>
-          <span
-            className={`font-mono text-[10px] tracking-eyebrow transition-colors ${
-              solid ? "text-teal" : "text-amber-glow"
-            }`}
-          >
-            37.8°N
-          </span>
+        <Link href="/" aria-label="24°N — home" className="flex items-center">
+          <Image
+            src="/images/logo-24n.png"
+            alt="24°N Coffee"
+            width={118}
+            height={51}
+            priority
+            className="h-9 w-auto md:h-10"
+          />
         </Link>
 
         <nav

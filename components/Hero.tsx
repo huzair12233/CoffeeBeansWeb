@@ -112,8 +112,8 @@ export function Hero() {
             transition={{ duration: 0.8, ease, delay: 0.7 }}
             className="absolute -left-4 bottom-8 flex items-center gap-3 rounded-2xl border border-cream-soft/15 bg-espresso/80 px-5 py-4 backdrop-blur-md md:-left-10"
           >
-            <span className="flex h-11 w-11 items-center justify-center rounded-full bg-amber-brand font-display text-lg font-semibold text-espresso">
-              A
+            <span className="flex h-11 w-11 items-center justify-center rounded-full bg-amber-brand font-display text-base font-semibold text-espresso">
+              24°
             </span>
             <div>
               <p className="font-display text-base leading-tight">Chelbesa</p>

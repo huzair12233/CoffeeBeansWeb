@@ -1,4 +1,4 @@
-# ALTA — California Single-Origin Coffee
+# 24°N — California Single-Origin Coffee
 
 A premium, frontend-only brand showcase for a fictional California coffee roaster, built with **Next.js 16 (App Router)**, **TypeScript**, **Tailwind CSS**, and **Motion**.
 

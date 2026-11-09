@@ -6,9 +6,9 @@ import { CTA } from "@/components/CTA";
 import { IMG } from "@/lib/images";
 
 export const metadata: Metadata = {
-  title: "Coffee Guide · ALTA",
+  title: "Coffee Guide · 24°N",
   description:
-    "Dial-in starting points for pour-over, espresso, French press and cold brew, plus a grind chart and the water temperatures ALTA pours at.",
+    "Dial-in starting points for pour-over, espresso, French press and cold brew, plus a grind chart and the water temperatures 24°N pours at.",
 };
 
 export default function GuidePage() {

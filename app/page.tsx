@@ -55,7 +55,7 @@ export default function Home() {
       />
 
       <CTA
-        heading="Pour ALTA at your counter."
+        heading="Pour 24°N at your counter."
         sub="Cafés, restaurants and offices across California partner with us for consistent, traceable single origins. Request the current wholesale catalogue."
         primary={{ label: "Wholesale inquiries", href: "/wholesale" }}
         secondary={{ label: "Shop retail", href: "/coffee" }}
